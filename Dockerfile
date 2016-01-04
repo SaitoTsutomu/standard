@@ -1,4 +1,4 @@
-FROM tsutomu7/py3sci
+FROM tsutomu7/scientific-python-3.5
 
 RUN pip install ortoolpy
 EXPOSE 8888
