@@ -1,4 +1,4 @@
-Standard problem of combinatorial optimization on python3.
+Standard problem of combinatorial optimization on python3. [![](https://badge.imagelayers.io/tsutomu7/standard:latest.svg)](https://imagelayers.io/?images=tsutomu7/standard:latest)
 ======
 
 See
