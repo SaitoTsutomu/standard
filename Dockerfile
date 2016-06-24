@@ -1,9 +1,8 @@
-FROM tsutomu7/scientific-python-3.5
+FROM tsutomu7/scientific-python
 
-RUN pip install ortoolpy
+RUN pip install ortoolpy && \
+    rm -rf $HOME/.c*
 EXPOSE 8888
-VOLUME ["/jupyter"]
-WORKDIR /jupyter
-COPY standard.tar.gz /root/
-CMD ["sh", "-c", "tar xzf /root/standard.tar.gz && jupyter notebook --ip=*"]
-
+VOLUME $HOME
+COPY standard.tar.gz /tmp/
+CMD ["sh", "-c", "tar xf /tmp/standard.tar.gz && jupyter notebook --ip=*"]
